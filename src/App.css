@@ -1,8 +1,66 @@
+nav {
+  position: sticky;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f2f6fc;
+  border-bottom: 1px solid #057fd0;
+}
+
+nav div {
+  width: 33%;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+nav div:hover {
+	background-color:#d9e9ff;
+}
+
+.main-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container h1 {
+  padding: 20px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 70px;
+  font-style: oblique;
+  letter-spacing: 5px;
+  color: #F76C6C;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -webkit-text-stroke: 0.1px black; /* width and color */
+
+}
+
+.main-container img {
+  width: 650px;
+}
+
 .starting-form-container {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 30px;
+}
+
+.starting-form-container-talks {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 30px;
+  margin-right: 120px;
+}
+
+.starting-form-container-talks button {
+  margin-right: 120px;
 }
 
 .add-students-form {
@@ -50,12 +108,25 @@ button:active {
 .show-students {
   display: flex;
   margin-left: 10%;
+  width: 80%;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .student-name {
   font-family: 'Gochi Hand', cursive;
   font-size: 30px;
   padding: 20px;
+}
+
+.student-talk {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 30px;
+}
+
+.name-crossed:hover {
+  text-decoration: line-through;
+  color: red;
 }
 
 .split-button-options {
@@ -67,4 +138,51 @@ button:active {
 
 hr {
   border-bottom:1px solid #057fd0;
+}
+
+.clock-time, time {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: black
+}
+
+
+.city-weather {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #057fd0;
+  padding: 20px;
+  width: 30%;
+  margin: 20px 0;
+  border-radius: 15px;
+}
+
+.weather-degree {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.only-weather {
+  display: flex;
+  align-items: center;
+}
+
+.clock-time {
+  font-size: 55px;
+  margin: 0;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.full-weather-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.talk-container {
+  columns: 400px 3;
+  margin: 5%;
 }
